@@ -1,11 +1,6 @@
-import {
-  Phone,
-  Mail,
-  MapPin,
-  MessageCircle,
-  Facebook,
-  Instagram,
-} from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle, Facebook } from "lucide-react";
+import { SiTiktok } from "react-icons/si";
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -77,11 +72,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             {/* Logo */}
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary via-accent to-secondary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-playfair font-bold text-sm">
-                  AAA
-                </span>
-              </div>
+              <img src={logo} className="w-10 m-0 p-0 h-5" />
               <span className="font-playfair font-bold text-lg">
                 Triple A Catering
               </span>
@@ -101,7 +92,7 @@ const Footer = () => {
                 className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-all"
                 aria-label="Instagram"
               >
-                <Instagram className="w-5 h-5" />
+                <SiTiktok className="w-5 h-5" />
               </a>
             </div>
 

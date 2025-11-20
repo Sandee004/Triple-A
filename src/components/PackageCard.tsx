@@ -66,7 +66,9 @@ const PackageCard = ({
       {/* Footer */}
       <div className="mt-6">
         <a
-          href="https://wa.me/447476166415"
+          href={`https://wa.me/447476166415?text=${encodeURIComponent(
+            `Hi, I'd like to order your ${title} package I saw on your website.`
+          )}`}
           target="_blank"
           rel="noopener noreferrer"
           className={`w-full flex justify-center items-center py-3 rounded-md font-montserrat font-semibold transition-all ${

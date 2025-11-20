@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { MessageCircle } from "lucide-react";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,57 +29,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="w-12 h-12 bg-gradient-to-br from-primary via-accent to-secondary rounded-full flex items-center justify-center">
-            <span className="text-primary-foreground font-playfair font-bold text-xl">
-              AAA
-            </span>
-            <svg
-              width="400"
-              height="300"
-              viewBox="0 0 400 300"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              {" "}
-              <rect width="100%" height="100%" fill="#f5f5f5" />
-              <g transform="translate(200, 100)">
-                {" "}
-                <path
-                  d="M-60,0 A60,60 0 0,1 60,0 L35,0 A35,35 0 0,0 -35,0 Z"
-                  fill="#d85c1a"
-                />{" "}
-                <path
-                  d="M-35,0 A35,35 0 0,1 35,0 L20,0 A20,20 0 0,0 -20,0 Z"
-                  fill="#fbc02d"
-                />{" "}
-                <path
-                  d="M-20,0 A20,20 0 0,1 20,0 L20,0 L-20,0 Z"
-                  fill="#08632e"
-                />{" "}
-              </g>
-              <text
-                x="200"
-                y="155"
-                font-family="Georgia, serif"
-                font-weight="bold"
-                font-size="48"
-                text-anchor="middle"
-                fill="#0e1e40"
-              >
-                Triple A
-              </text>
-              <text
-                x="200"
-                y="185"
-                font-family="Arial, sans-serif"
-                font-size="24"
-                letter-spacing="3"
-                text-anchor="middle"
-                fill="#d85c1a"
-              >
-                CATERING
-              </text>{" "}
-            </svg>
-          </div>
+          <img src={logo} className="w-20 m-0 p-0 h-10" />
           <div>
             <h1 className="font-playfair font-bold text-xl text-foreground">
               Triple A Catering
