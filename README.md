@@ -1,73 +1,12 @@
-# React + TypeScript + Vite
+# Triple A Catering🍛
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Triple A Catering** is a dedicated web platform designed to establish a digital presence for a premier Nigerian catering service in Tameside, Manchester. This project bridges the gap between authentic African cuisine and the local community, serving as the primary touchpoint for customers seeking home-style cooking.
 
-Currently, two official plugins are available:
+The platform focuses on accessibility and brand identity, ensuring that the rich culinary heritage of Nigeria—featuring staples like Jollof Rice, Ayamase, and Pounded Yam—is presented in a modern, appetite-inducing format. It transforms a local catering service into a searchable, verifiable digital entity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🚀 Project Highlights
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* **Brand Showcase:** A clean, visual-first interface that highlights the "Triple A" identity—Authentic Flavour, Home-style Cooking, and Unforgettable Taste.
+* **Service Discovery:** clear categorization of services, allowing users to easily navigate between event catering, private dining, and daily delivery options.
+* **Localized SEO:** Optimized specifically for the Manchester and Tameside region, ensuring the business captures local search traffic for Nigerian cuisine.
+* **Direct Conversion:** Streamlined contact pathways (Phone & Email) to reduce friction for potential clients looking to book events or place orders.
