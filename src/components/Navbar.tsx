@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src={logo} className="w-20 m-0 p-0 h-10" />
+          <img src={logo} className="w-20 m-0 p-0 h-10" alt="logo" />
           <div>
             <h1 className="font-playfair font-bold text-xl text-foreground">
               Triple A Catering

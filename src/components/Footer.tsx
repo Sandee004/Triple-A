@@ -72,7 +72,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             {/* Logo */}
             <div className="flex items-center gap-2">
-              <img src={logo} className="w-10 m-0 p-0 h-5" />
+              <img src={logo} className="w-10 m-0 p-0 h-5" alt="logo" />
               <span className="font-playfair font-bold text-lg">
                 Triple A Catering
               </span>
@@ -88,9 +88,9 @@ const Footer = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.tiktok.com/@triple.a.catering1"
                 className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-all"
-                aria-label="Instagram"
+                aria-label="Tiktok"
               >
                 <SiTiktok className="w-5 h-5" />
               </a>
