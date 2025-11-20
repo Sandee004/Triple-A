@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* Tailwind v4 uses @theme instead of :root and @layer */
+
+@theme {
+  /* Colors */
+  --color-background: hsl(45 30% 96%);
+  --color-foreground: hsl(140 30% 15%);
+
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(140 30% 15%);
+
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(140 30% 15%);
+
+  --color-primary: hsl(25 95% 53%);
+  --color-primary-foreground: hsl(0 0% 100%);
+
+  --color-secondary: hsl(140 50% 35%);
+  --color-secondary-foreground: hsl(0 0% 100%);
+
+  --color-muted: hsl(45 20% 90%);
+  --color-muted-foreground: hsl(140 15% 40%);
+
+  --color-accent: hsl(45 90% 55%);
+  --color-accent-foreground: hsl(140 30% 15%);
+
+  --color-destructive: hsl(0 84.2% 60.2%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+
+  --color-border: hsl(45 20% 85%);
+  --color-input: hsl(45 20% 85%);
+  --color-ring: hsl(25 95% 53%);
+
+  /* Radii */
+  --radius: 0.75rem;
+
+  /* Gradients */
+  --gradient-festive: linear-gradient(
+    135deg,
+    hsl(25 95% 53%) 0%,
+    hsl(45 90% 55%) 100%
+  );
+
+  --gradient-hero: linear-gradient(
+    to bottom,
+    hsl(140 50% 35% / 0.7),
+    hsl(25 95% 53% / 0.8)
+  );
+
+  /* Shadows */
+  --shadow-glow: 0 0 30px hsl(45 90% 55% / 0.3);
+  --shadow-card: 0 10px 40px hsl(140 30% 15% / 0.1);
+
+  /* Animation Timing */
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark theme override */
+@theme .dark {
+  --color-background: hsl(140 30% 8%);
+  --color-foreground: hsl(45 30% 95%);
+
+  --color-card: hsl(140 25% 12%);
+  --color-card-foreground: hsl(45 30% 95%);
+
+  --color-popover: hsl(140 25% 12%);
+  --color-popover-foreground: hsl(45 30% 95%);
+
+  --color-primary: hsl(25 95% 53%);
+  --color-primary-foreground: hsl(0 0% 100%);
+
+  --color-secondary: hsl(140 50% 25%);
+  --color-secondary-foreground: hsl(0 0% 100%);
+
+  --color-muted: hsl(140 20% 20%);
+  --color-muted-foreground: hsl(45 20% 65%);
+
+  --color-accent: hsl(45 90% 55%);
+  --color-accent-foreground: hsl(140 30% 15%);
+
+  --color-destructive: hsl(0 62.8% 30.6%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+
+  --color-border: hsl(140 20% 20%);
+  --color-input: hsl(140 20% 20%);
+  --color-ring: hsl(25 95% 53%);
+}
