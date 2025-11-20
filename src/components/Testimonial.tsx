@@ -3,21 +3,21 @@ import { Star } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Sarah O.",
+      name: "Kemi",
       location: "Ashton-under-Lyne",
-      text: "Triple A Catering made our Christmas truly special! The Jollof was incredible and brought back memories of home. Everyone at our party couldn't stop raving about the food.",
+      text: "I had it as lunch at work. It was so so delicious. I recommend!",
       rating: 5,
     },
     {
-      name: "David M.",
+      name: "Tricia",
       location: "Manchester",
-      text: "Absolutely phenomenal! The Grand Banquet package fed our entire family perfectly. The quality and authenticity of the dishes exceeded all expectations.",
+      text: "After being disappointed by alot of other vendors, I'm lucky I found you. The food was 100%! My relatives really loved the egusi soup too. Thank you Triple A. Catering!!",
       rating: 5,
     },
     {
-      name: "Amaka N.",
+      name: "Amaka",
       location: "Tameside",
-      text: "From the first bite, I knew this was authentic Nigerian cooking. The pounded yam was perfect, and the Ayamase stew was just like my grandmother used to make. Five stars!",
+      text: "From the first bite, you had me hooked. The pounded yam was perfect, and the Ayamase stew was just like my grandmother used to make. Five stars!",
       rating: 5,
     },
   ];

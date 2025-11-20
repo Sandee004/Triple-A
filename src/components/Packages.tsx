@@ -1,11 +1,14 @@
 import PackageCard from "./PackageCard";
+import { MessageCircle } from "lucide-react";
 
 const Packages = () => {
   const packages = [
     {
       title: "The Family Feast",
-      price: "£170",
+      price: "£120",
+      oldPrice: "£170",
       serves: "5 People",
+      discount: true,
       items: [
         "Jollof Rice (2L)",
         "Fried Rice (4L)",
@@ -16,7 +19,8 @@ const Packages = () => {
     },
     {
       title: "The Grand Banquet",
-      price: "£320",
+      price: "£200",
+      oldPrice: "£320",
       serves: "10 People",
       items: [
         "Jollof Rice (4L)",
@@ -25,17 +29,19 @@ const Packages = () => {
         "Dodo Gizzard (1L)",
       ],
       featured: true,
+      discount: true,
     },
     {
       title: "The Traditional Special",
-      price: "£320",
+      price: "£250",
       serves: "10 People",
       items: [
-        "Iyan (Pounded Yam 4L)",
-        "Ayamase Stew (1L)",
+        "Iyan (Pounded Yam 10 wraps)",
+        "Egusi soup/Vegetable soup (1L)",
         "Moi Moi (10 pieces)",
-        "Dodo",
       ],
+      oldPrice: "£350",
+      discount: true,
     },
   ];
 
@@ -53,10 +59,31 @@ const Packages = () => {
           </p>
         </div>
 
+        {/* Package Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {packages.map((pkg, index) => (
             <PackageCard key={index} {...pkg} />
           ))}
+        </div>
+
+        {/* Custom Request */}
+        <div className="text-center mt-16 animate-fade-in">
+          <p className="font-montserrat text-lg text-foreground">
+            Custom request?{" "}
+            <span className="text-primary font-semibold">
+              Send a DM — let’s talk!
+            </span>
+          </p>
+
+          <a
+            href="https://wa.me/447476166415?text=Hi%20I%20have%20a%20custom%20order%20request"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-3 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-md font-montserrat font-semibold"
+          >
+            <MessageCircle className="w-4 h-4" />
+            Message on WhatsApp
+          </a>
         </div>
       </div>
     </section>

@@ -3,17 +3,21 @@ import { Check, MessageCircle, Star } from "lucide-react";
 interface PackageCardProps {
   title: string;
   price: string;
+  oldPrice?: string;
   serves: string;
   items: string[];
   featured?: boolean;
+  discount?: boolean;
 }
 
 const PackageCard = ({
   title,
   price,
+  oldPrice,
   serves,
   items,
   featured = false,
+  discount = false,
 }: PackageCardProps) => {
   return (
     <div
@@ -23,16 +27,23 @@ const PackageCard = ({
           : "border-2 border-border"
       }`}
     >
+      {/* Discount Banner */}
+      {discount && (
+        <div className="absolute top-0 left-0 w-full bg-red-500 text-white py-1 text-center font-bold text-sm tracking-wide shadow-md z-20">
+          🎄 Christmas Discount – Limited Time!
+        </div>
+      )}
+
       {/* Featured Badge */}
       {featured && (
-        <div className="absolute top-4 right-4 bg-accent text-accent-foreground px-4 py-2 rounded-full font-montserrat font-bold text-sm flex items-center gap-1 shadow-lg">
+        <div className="absolute top-4 right-4 bg-accent text-accent-foreground px-4 py-2 rounded-full font-montserrat font-bold text-sm flex items-center gap-1 shadow-lg z-10">
           <Star className="w-4 h-4 fill-current" />
           Best Value
         </div>
       )}
 
       {/* Header */}
-      <div className="pb-4">
+      <div className="pt-6 pb-4">
         <h3 className="font-playfair text-2xl md:text-3xl text-foreground">
           {title}
         </h3>
@@ -44,13 +55,19 @@ const PackageCard = ({
       {/* Content */}
       <div className="space-y-4">
         {/* Price Box */}
-        <div className="text-center py-4 bg-muted rounded-lg">
+        <div className="text-center py-4 bg-muted rounded-lg space-y-1">
+          {oldPrice && (
+            <span className="font-montserrat text-lg text-red-500 line-through opacity-70 block">
+              {oldPrice}
+            </span>
+          )}
+
           <span className="font-playfair text-4xl md:text-5xl font-bold text-primary">
             {price}
           </span>
         </div>
 
-        {/* Items List */}
+        {/* Items */}
         <div className="space-y-2">
           {items.map((item, index) => (
             <div key={index} className="flex items-start gap-2">
@@ -63,7 +80,7 @@ const PackageCard = ({
         </div>
       </div>
 
-      {/* Footer */}
+      {/* CTA */}
       <div className="mt-6">
         <a
           href={`https://wa.me/447476166415?text=${encodeURIComponent(
