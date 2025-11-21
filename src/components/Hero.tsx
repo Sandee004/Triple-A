@@ -19,7 +19,7 @@ const Hero = () => {
           <span className="text-accent">This Christmas</span>
         </h1>
 
-        <p className="font-montserrat text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+        <p className="font-montserrat text-lg md:text-xl text-primary-foreground mb-8 max-w-2xl mx-auto">
           Delicious Nigerian cuisine from Triple A Catering. <br />
           Limited Christmas slots – reserve yours today!
         </p>

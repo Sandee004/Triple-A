@@ -17,7 +17,7 @@ const Testimonials = () => {
     {
       name: "Amaka",
       location: "Tameside",
-      text: "From the first bite, you had me hooked. The pounded yam was perfect, and the Ayamase stew was just like my grandmother used to make. Five stars!",
+      text: "Your best smoky joloof i have eaten so far. The smell is making people ask who dey eat that smoky food.😆😆",
       rating: 5,
     },
   ];
