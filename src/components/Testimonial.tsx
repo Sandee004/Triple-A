@@ -9,26 +9,26 @@ interface Review {
 }
 
 const Testimonials = () => {
-  // const [reviews, setReviews] = useState<Review[]>([
-  //   {
-  //     name: "Kemi",
-  //     location: "Ashton-under-Lyne",
-  //     text: "I had it as lunch at work. It was so so delicious. I recommend!",
-  //     rating: 5,
-  //   },
-  //   {
-  //     name: "Tricia",
-  //     location: "Manchester",
-  //     text: "After being disappointed by a lot of other vendors, I'm lucky I found you. The food was 100%! My relatives really loved the egusi soup too. Thank you Triple A Catering!!",
-  //     rating: 5,
-  //   },
-  //   {
-  //     name: "Amaka",
-  //     location: "Tameside",
-  //     text: "Your best smoky jollof I have eaten so far. The smell is making people ask who dey eat that smoky food. 😆😆",
-  //     rating: 5,
-  //   },
-  // ]);
+  const [reviews, setReviews] = useState<Review[]>([
+    {
+      name: "Kemi",
+      location: "Ashton-under-Lyne",
+      text: "I had it as lunch at work. It was so so delicious. I recommend!",
+      rating: 5,
+    },
+    {
+      name: "Tricia",
+      location: "Manchester",
+      text: "After being disappointed by a lot of other vendors, I'm lucky I found you. The food was 100%! My relatives really loved the egusi soup too. Thank you Triple A Catering!!",
+      rating: 5,
+    },
+    {
+      name: "Amaka",
+      location: "Tameside",
+      text: "Your best smoky jollof I have eaten so far. The smell is making people ask who dey eat that smoky food. 😆😆",
+      rating: 5,
+    },
+  ]);
 
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({
@@ -40,7 +40,7 @@ const Testimonials = () => {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
   // Change your initial state to start as an empty array
-  const [reviews, setReviews] = useState<Review[]>([]);
+  //const [reviews, setReviews] = useState<Review[]>([]);
 
   // Fetch reviews from the backend on page load
   useEffect(() => {
