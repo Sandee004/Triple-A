@@ -46,7 +46,9 @@ const Testimonials = () => {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/reviews"); // Replace with your actual backend URL
+        const response = await fetch(
+          "https://triple-a-backend.onrender.com/api/reviews",
+        ); // Replace with your actual backend URL
         if (response.ok) {
           const data = await response.json();
           setReviews(data);
